@@ -1,0 +1,95 @@
+{
+  "myUsers": [
+    {
+      "id": "qa123",
+      "name": "Bob",
+      "surname": "Bob",
+      "username": "Bob.Bob",
+      "role": "Admin",
+      "password": "bob123bob",
+      "expiry_date": 1628291235831
+    }
+  ],
+
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Internal"
+    },
+    {
+      "id": 3,
+      "name": "External"
+    }
+  ],
+
+  "warrantRequestType": [
+    {
+      "id": 1,
+      "name": "internet"
+    },
+    {
+      "id": 2,
+      "name": "voice"
+    },
+    {
+      "id": 3,
+      "name": "tracking"
+    }
+  ],
+
+  "warrantRequestStatus": [
+    {
+      "id": 1,
+      "name": "new"
+    },
+    {
+      "id": 2,
+      "name": "ongoing"
+    },
+    {
+      "id": 3,
+      "name": "completed"
+    }
+  ],
+
+  "warrants": [
+    {
+      "id":"qa123",
+      "nome":"Titolo del decreto",
+      "createdBy":"qa123",
+      "status":{
+        "id": 1,
+        "name": "new"
+      },
+      "creationDate":1628291235831,
+      "note":"Note di un decreto",
+      "tipologia": {
+        "id": 1,
+        "name": "internet"
+      },
+      "urgent": false
+    }
+  ],
+
+  "requests": [
+    {
+      "id":"qa122",
+      "warrantId":"qa123",
+      "status":{
+        "id": 1,
+        "name": "new"
+      },
+      "creationDate":1628291235855,
+      "note":"Note di una ricerca",
+      "tipologia": {
+        "id": 1,
+        "name": "internet"
+      },
+      "target": "3219882345"
+    }
+  ]
+}
